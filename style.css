@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+:root {
+    --primaryTextColor: #8a2435;
+}
 section {
     display: flex;
     justify-content: center;
@@ -48,7 +51,7 @@ header {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 header .logo {
-    color: #8a2435;
+    color: var(--primaryTextColor);
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
@@ -63,7 +66,7 @@ header ul li {
 header ul li a {
     text-decoration: none;
     font-weight: 500;
-    color: #8a2435;
+    color: var(--primaryTextColor);
     padding: 8px 15px;
     border-radius: 25px;
 }
@@ -86,17 +89,17 @@ header ul li a.active {
 }
 .content h2 {
     font-size: 3em;
-    color: #8a2435;
+    color: var(--primaryTextColor);
 }
 .content p {
     font-size: 1.2em;
-    color: #8a2435;
+    color: var(--primaryTextColor);
 }
 .content a {
     display: inline-block;
     padding: 15px 30px;
     background: #fff;
-    color: #8a2435;
+    color: var(--primaryTextColor);
     margin-top: 20px;
     border-radius: 30px;
     font-size: 1.2em;
@@ -150,5 +153,5 @@ header ul li a.active {
     position: absolute;
     bottom: 30px;
     left: 50px;
-    color: #8a2435; 
+    color: var(--primaryTextColor); 
 }
